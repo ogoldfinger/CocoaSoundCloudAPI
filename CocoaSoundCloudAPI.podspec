@@ -89,8 +89,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Sources", "Sources/**/*.{h,m}"
+  s.exclude_files = "Sources/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -131,6 +131,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "NXOAuth2Client", "~> 1.2.8"
 
 end
